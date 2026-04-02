@@ -281,3 +281,73 @@ a{color:inherit;text-decoration:none}
   .solar-benefits-grid h2,.solar-reviews-grid h2,.solar-savings-grid h2{font-size:42px;}
   .solar-testimonials .quote:last-child{grid-column:auto;}
 }
+
+
+/* V16 solar page proper fix */
+.solar-benefits{padding-top:42px;padding-bottom:82px;}
+.solar-benefits-grid{align-items:start;gap:92px;}
+.solar-benefits-grid > div:first-child{padding-top:8px;}
+.solar-benefits-grid h2{font-size:62px;line-height:1.06;letter-spacing:-.045em;max-width:620px;margin:0;}
+.solar-benefits-grid p{max-width:575px;font-size:18px;line-height:1.62;color:#262626;}
+.solar-benefits .section-label{margin-bottom:12px;}
+.solar-benefits .cta-row{margin-top:20px;gap:18px;}
+.solar-mosaic{margin-top:68px;gap:30px 28px;}
+.solar-mosaic .card{background:transparent;}
+.solar-mosaic .card img{height:295px;object-fit:cover;object-position:center;}
+.solar-mosaic .card:nth-child(4),.solar-mosaic .card:nth-child(5),.solar-mosaic .card:nth-child(6){align-self:start;}
+.solar-mosaic .card:nth-child(4) img,.solar-mosaic .card:nth-child(5) img,.solar-mosaic .card:nth-child(6) img{height:340px;}
+.solar-mosaic .card h3{font-size:22px;line-height:1.15;margin-top:18px;margin-bottom:10px;}
+.solar-mosaic .card p{font-size:14px;line-height:1.55;color:#3a3a3a;max-width:96%;}
+
+.solar-reviews{padding-top:88px;padding-bottom:74px;}
+.solar-reviews-grid{align-items:start;gap:120px;margin-bottom:34px;}
+.solar-reviews-grid > div:first-child{max-width:650px;}
+.solar-reviews-grid > div:last-child{max-width:560px;padding-top:24px;}
+.solar-reviews-grid h2{font-size:66px;line-height:1.05;letter-spacing:-.045em;max-width:640px;margin:0;}
+.solar-reviews-grid p{font-size:18px;line-height:1.58;color:#222;max-width:560px;margin:0 0 28px;}
+.solar-reviews-grid .btn{background:transparent;color:#111;border:1px solid #2a2a2a;}
+.solar-testimonials{display:grid;grid-template-columns:1fr 1fr;gap:24px 24px;margin-top:10px;}
+.solar-testimonials .quote{background:#ecebe8;padding:26px 24px 24px;min-height:170px;box-shadow:none;border:none;}
+.solar-testimonials .quote .mark{font-size:26px;line-height:1;margin-bottom:10px;display:block;}
+.solar-testimonials .quote p{font-size:15px;line-height:1.6;color:#161616;max-width:92%;margin:0 0 28px;}
+.solar-testimonials .quote .who{font-size:13px;line-height:1.45;color:#444;}
+.solar-testimonials .quote:nth-child(5){grid-column:1 / -1;min-height:136px;}
+.solar-testimonials .quote:nth-child(5) p{max-width:90%;}
+
+.offset-feature{padding:102px 0 88px;}
+.offset-feature-grid{gap:132px;align-items:start;}
+.offset-feature-left{max-width:610px;}
+.solar-panels-page .offset-feature-left{padding-top:8px;}
+.offset-feature-left h2,.offset-feature-right h2{font-size:70px;line-height:1.04;letter-spacing:-.05em;}
+.offset-feature-left p,.offset-feature-right p{font-size:18px;line-height:1.62;color:#222;}
+.offset-feature-right{padding-top:112px;max-width:560px;}
+.offset-feature-right .cta-row{margin-top:22px;}
+.offset-feature-right .btn{background:transparent;color:#111;border:1px solid #2a2a2a;}
+
+.solar-savings{padding-top:54px;padding-bottom:10px;}
+.solar-savings-grid{align-items:start;gap:100px;margin-bottom:22px;}
+.solar-savings-grid h2{font-size:64px;line-height:1.05;letter-spacing:-.045em;max-width:620px;margin:0;}
+.solar-savings-grid p{font-size:18px;line-height:1.58;color:#222;max-width:540px;}
+.solar-savings-grid a{display:inline-block;margin-top:20px;padding:13px 24px;border:1px solid #2a2a2a;background:transparent;}
+.solar-stats-rise{background:var(--bg);margin-top:34px;padding-top:12px;transform:translateY(14px);}
+.solar-stats-rise .stat{background:var(--bg);padding:10px 24px 8px 24px;min-height:230px;}
+.solar-stats-rise .stat .num{font-size:56px;margin-bottom:18px;}
+.solar-stats-rise .stat h4{font-size:17px;line-height:1.35;margin-bottom:12px;}
+.solar-stats-rise .stat p{font-size:14px;line-height:1.62;color:#333;max-width:90%;}
+
+/* top bar consistency */
+.site-header{background:var(--bg);}
+.nav-wrap{height:80px;gap:24px;}
+.brand{font-size:21px;font-weight:700;white-space:nowrap;}
+.nav-links{gap:24px;justify-content:center;}
+.nav-links a{font-size:14px;line-height:1;}
+.nav-right .btn{background:#3d3d3b;color:#fff;border-color:#3d3d3b;}
+
+@media (max-width:980px){
+ .solar-testimonials,.solar-benefits-grid,.solar-reviews-grid,.solar-savings-grid,.offset-feature-grid{grid-template-columns:1fr;gap:36px;}
+ .solar-mosaic{grid-template-columns:1fr 1fr;}
+ .solar-mosaic .card img,.solar-mosaic .card:nth-child(4) img,.solar-mosaic .card:nth-child(5) img,.solar-mosaic .card:nth-child(6) img{height:240px;}
+ .solar-reviews-grid > div:last-child,.offset-feature-right{padding-top:0;max-width:none;}
+ .solar-testimonials .quote:nth-child(5){grid-column:auto;}
+ .offset-feature-left h2,.offset-feature-right h2,.solar-savings-grid h2,.solar-reviews-grid h2,.solar-benefits-grid h2{font-size:42px;}
+}
